@@ -1,8 +1,8 @@
-import { Router } from "express";
+import Router from "express";
 const router = Router();
 
 import { createProject } from "../controllers/project_controller";
 
-router.post('/', createProject);
+router.get("/", createProject);
 
 export default router;
